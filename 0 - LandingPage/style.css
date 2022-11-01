@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+}
+
+/* ////////////// LADO ESQUERDO /////////////// */
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: #00ff88;
+  font-weight: 600;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.left-login-image {
+  margin-bottom: 50px;
+  margin-left: 100px;
+  width: 35vw;
+}
+
+/* ////////////// LADO DIREITO /////////////// */
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1 {
+  width: 100%;
+  color: #00ff88;
+  font-weight: 600;
+  margin-top: 0;
+  text-align: center;
+}
+
+.recuperar-senha {
+  width: 100%;
+}
+
+.recuperar-senha a {
+  color: #00ff8869;
+  font-size: 9pt;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.textfield > input ::placeholder {
+  color: #f0ffff94;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 50px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8094;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main-login {
+      flex-direction: column;
+    }
+  }
+
+  .left-login > h1 {
+    display: none;
+  }
+
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-login-image {
+    width: 50vw;
+    margin: 20px;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}
